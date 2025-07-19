@@ -1,0 +1,29 @@
+.button {
+  background-color: var(--Main5) !important;
+  border: none !important;
+  font-size: 14px;
+  font-weight: 600;
+  border-radius: 5px;
+  cursor: pointer;
+  position: relative;
+  margin-right: 10px;
+
+  .uploadBtn {
+    cursor: pointer;
+    position: absolute;
+    left: 0px;
+    height: 100%;
+    width: 100% !important;
+    opacity: 0;
+    background: #00f;
+    z-index: 999;
+    top: 0;
+    > input {
+      height: 100%;
+      width: 100% !important;
+    }
+    span {
+      dispaly: none;
+    }
+  }
+}

@@ -1,0 +1,194 @@
+@import "../../../assets/stylesheet/variables.module.scss";
+@import "../../../assets/stylesheet/fonts.module.scss";
+
+.mainHeader {
+  margin-left: 250px;
+  padding: 22px 30px;
+  background: #fff;
+  border-bottom: 1px solid #eeeeee;
+
+  .mobileHeader {
+    display: none;
+  }
+
+  .headerTitle {
+    h3 {
+      margin: 0;
+      font-size: 20px;
+      font-weight: 600;
+    }
+  }
+
+  .headerSearch {
+    :global(.input-group) {
+      width: 300px;
+    }
+
+    :global(.form-control) {
+      border-radius: 8px !important;
+      height: 30px;
+      line-height: 40px;
+      padding: 0px 15px;
+      border-color: #fff;
+      border: 1px solid gainsboro;
+      padding-right: 40px;
+      font-size: 15px;
+
+      &:focus {
+        box-shadow: none;
+      }
+    }
+
+    .searchBtn {
+      position: absolute;
+      border: none;
+      background-color: transparent;
+      right: 10px;
+      transform: translate(0%, -50%);
+      top: 50%;
+      cursor: pointer;
+      z-index: 9;
+      margin-top: -1px;
+      padding: 0;
+      color: #8b8989;
+      display: flex;
+      align-items: center;
+      font-size: 16px;
+    }
+  }
+
+  .headerRight {
+    a {
+      padding: 10px;
+      font-size: 14px;
+      height: 40px;
+
+      min-width: max-content;
+      color: var(--Color5);
+      background-color: var(--Main5);
+      border-radius: 5px;
+      font-weight: 500;
+      &:hover {
+        background: var(--Main2);
+        color: var(--Color2);
+      }
+      &.logoutButton {
+        background-color: #ff72728b;
+        color: white;
+        &:hover {
+          background-color: #ff7272;
+        }
+      }
+    }
+
+    ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: right;
+      align-items: center;
+
+      li {
+        margin-left: 40px;
+        font-size: 14px;
+
+        :global(.dropdown) {
+          :global(.dropdown-toggle) {
+            padding: 0px;
+            border: none !important;
+            color: var(--AdminMain);
+            text-decoration: none;
+            &:active {
+              border: none !important;
+            }
+            img {
+              height: 20px;
+            }
+
+            &::after {
+              display: none;
+            }
+
+            &:focus {
+              box-shadow: none;
+            }
+
+            .icon {
+              font-size: 19px;
+            }
+
+            .menuTT {
+              font-size: 14px;
+              margin-top: 3px;
+              font-weight: 500;
+            }
+          }
+
+          :global(.dropdown-menu) {
+            background-color: #fff;
+            border-color: #fff;
+            color: #fff;
+            min-width: 250px;
+            border-radius: 8px;
+            margin-right: 2px !important;
+            box-shadow: 0px 4px 40px 0px #70707057;
+
+            :global(.dropdown-item) {
+              color: #333;
+              padding: 10px 15px;
+
+              &.borderM {
+                border-bottom: 1px solid #aacbfe;
+                padding: 15px 15px;
+              }
+
+              &.pSpace {
+                margin-top: 10px;
+              }
+
+              p {
+                margin-bottom: 5px;
+                font-size: 14px;
+              }
+              a {
+                color: #333;
+              }
+              h5 {
+                margin: 0;
+                font-size: 16px;
+                font-weight: normal;
+              }
+
+              &:hover,
+              &:focus {
+                background: transparent;
+              }
+            }
+          }
+        }
+
+        &.help {
+          :global(.dropdown) {
+            :global(.dropdown-toggle) {
+              .helpImg {
+                height: 29px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/*=======================================================
+//////////////RESPONSIVE MEDIA QUERY START///////////////
+=======================================================*/
+@media (max-width: 768px) {
+  .mainHeader {
+ 
+    display: none;
+ 
+  }
+}

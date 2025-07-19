@@ -1,0 +1,89 @@
+
+.addedCard {
+  width: 100%;
+  background: #fff;
+  border: 2px solid #e8e8e8;
+  padding: 13px 15px;
+  border-radius: 10px;
+  margin-bottom: 15px;
+
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    h6 {
+      font-size: 18px;
+      margin-bottom: 0px;
+    }
+    li {
+      font-size: 14px;
+      margin-top: 5px;  
+    }
+  }
+
+  &.radio {
+    position: relative;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    
+    &:hover input ~ .checkmark {
+        background-color: #f3f1f1;
+      border: 1px solid #d8d8d8;
+    }
+    
+      input {
+      opacity: 0;
+      margin-right:5px;
+      position: absolute;
+      
+        &:checked ~ .checkmark {
+        background-color: var(--Main);
+        border: 1px solid var(--Main);
+      }
+      &:checked ~ .checkmark:after {
+        display: block;
+      }
+    }
+    .checkmark {
+      position: absolute;
+      top: 50%;
+      right: 20px;
+      height: 17px;
+      width: 17px;
+      background-color: #eee;
+      border-radius: 50%;
+      border: 1px solid #d8d8d8;
+      transform: translate(-50%, -50%);
+  
+        &:after {
+        content: "";
+        position: absolute;
+        display: none;
+        left: 4px;
+        top: 4px;
+        width: 7px;
+        height: 7px;
+        border-radius: 50%;
+        background: white;
+      }
+      }	
+
+    .deleteBtn {
+      position: absolute;
+      top: 50%;
+      right:0px;
+      height: 30px;
+      width: 30px;
+      background-color: #bf4242;
+      border-radius: 50%;
+      border: 1px solid #bf4242;
+      transform: translate(-50%, -50%);
+      color: #fff;
+    } 
+  }
+}
+

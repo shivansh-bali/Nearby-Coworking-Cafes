@@ -1,0 +1,120 @@
+.modalCts {
+  :global(.modal-dialog) {
+    :global(.modal-content) {
+      width: 490px;
+      border: none;
+      background-color: #fff;
+      border-radius: 20px;
+      :global(.modal-header) {
+        padding: 10px 20px;
+        background: var(--Main);
+
+        :global(.modal-title) {
+          font-size: 20px;
+        }
+
+        .closeIcon {
+          position: absolute;
+          right: 5px;
+          top: 5px;
+          background: transparent;
+          border: none;
+          width: 40px;
+          height: 40px;
+          padding: 5px 5px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          border-radius: 50px;
+          font-size: 25px;
+        }
+      }
+
+      :global(.modal-footer) {
+        padding: 8px 12px;
+        justify-content: center;
+
+        .submit {
+          background: var(--Main);
+          color: #222;
+          border-color: var(--Main);
+        }
+      }
+    }
+  }
+}
+
+.searchForm {
+  box-shadow: 0px 4px 40px 0px #70707030;
+  font-size: 14px;
+  margin-bottom: 15px;
+  padding: 10px 15px;
+  border: 1px solid #fff;
+
+  &:focus {
+    box-shadow: 0px 4px 40px 0px #70707030;
+    border: 1px solid var(--Main);
+  }
+}
+
+.paymentTab {
+  :global(.nav-pills) {
+    margin-bottom: 15px;
+
+    :global(.nav-item) {
+      :global(.nav-link) {
+        background-color: #fff;
+        border: 2px solid var(--Main);
+        color: #222;
+        min-width: 150px;
+        text-align: center;
+        margin-right: 15px;
+
+        &:global(.active) {
+          background-color: var(--Main);
+        }
+      }
+    }
+  }
+}
+.logoutPopup {
+  padding: 20px 20px;
+
+  h3 {
+    font-size: 18px;
+
+    text-align: center;
+    font-weight: 600;
+    padding: 30px 60px;
+    width: 100%;
+    margin-bottom: 15px;
+  }
+
+  :global(.btn) {
+    width: 200px;
+    display: block;
+    padding: 12px 15px;
+    text-align: center;
+    font-size: 14px;
+    color: var(--Color5);
+    background-color: var(--Main5);
+    border-radius: 50px;
+    font-weight: 600;
+    border: none;
+  }
+
+  .btnsAlignments {
+    display: flex;
+    a {
+      color: var(--Color5);
+      background-color: var(--Main5);
+    }
+    .actionBtn {
+      color: var(--Color2);
+      background-color: var(--Main2);
+    }
+    :global(.btn) {
+      margin: 0px 5px;
+    }
+  }
+}

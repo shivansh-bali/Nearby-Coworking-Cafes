@@ -1,0 +1,22 @@
+
+.wrapper {
+    height: 100vh;
+    max-width: 1920px;
+    margin: 0 auto;
+    background:var(--BodyBackground);
+    border-right: 1px solid #e6e5e5;
+}
+
+
+/*=======================================================
+//////////////RESPONSIVE MEDIA QUERY START///////////////
+=======================================================*/
+
+
+@media (max-width: 767px) {
+
+    .wrapper {
+        border-right:none;
+    }
+
+}

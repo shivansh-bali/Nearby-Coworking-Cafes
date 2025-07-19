@@ -1,0 +1,33 @@
+.multipleSelect {
+
+    :global(.MuiFormControl-root) {
+        width: 100%;
+        margin: 0px;
+
+        :global(.MuiInputBase-root) {
+            font-family: 'Poppins',sans-serif !important;
+
+            :global(.MuiOutlinedInput-input) {
+                padding: 10px 12px;
+
+                :global(.MuiBox-root) {
+
+                    :global(.MuiChip-root) {
+                        margin: 2px 5px 2px 0px;
+                    }
+                }
+            }
+            :global(.MuiOutlinedInput-notchedOutline) {
+                border: 1px solid #ccc !important;
+            }
+        }
+    }
+}
+
+/*=======================================================
+//////////////RESPONSIVE MEDIA QUERY START///////////////
+=======================================================*/
+@media (max-width: 767px) {
+
+ 
+}

@@ -1,0 +1,76 @@
+.sidepanel {
+  width: 250px;
+  padding: 20px 0px;
+  border-radius: 20px;
+  background-color: #fff;
+  height: 95vh;
+  max-height: 810px;
+  h5 {
+    font-size: 10px;
+    font-weight: 600;
+    color: #bababa;
+    padding: 0px 20px;
+  }
+
+  a,
+  button {
+    display: block;
+    padding: 0px 20px;
+    text-align: start;
+    color: var(--Color5);
+    font-size: 14px;
+    font-weight: 600;
+    margin: 10px 0px 0px 0px;
+    color: black;
+    &:hover {
+      color: black;
+    }
+    &.active {
+      border-left: 2px solid black;
+    }
+    span {
+      min-width: max-content;
+      margin-left: 10px;
+    }
+  }
+  .nestedLinks {
+    .item {
+      position: relative;
+      right: -26px;
+      height: 30px;
+      width: 30px;
+      color: #bababa;
+
+      .connecter {
+        border-width: 0px 0px 1px 1px;
+        border-color: currentColor;
+        border-style: solid;
+        height: 100%;
+        width: 100%;
+      }
+      button {
+        position: absolute;
+        left: 32px;
+        top: 10px;
+        border: none;
+        background-color: transparent;
+        font-size: 12px;
+        padding: 0;
+        width: max-content;
+        color: #bababa;
+        &:hover {
+          color: black;
+        }
+      }
+      .active {
+        color: black;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .sidepanel {
+    display: none;
+  }
+}

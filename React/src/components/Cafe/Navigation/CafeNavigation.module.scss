@@ -1,0 +1,9 @@
+.cafePanel {
+  background-color: #f9f9f9;
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+  &:global(.container) {
+    max-width: 1440px;
+  }
+}
