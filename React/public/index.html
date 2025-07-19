@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+              new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+            'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-PLR3SDRK');</script>
+    <!-- End Google Tag Manager -->
+    <!-- End Google Tag Manager -->
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicons.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="theme-color" content="#000000" />
+    <meta name="referrer" content="origin-when-cross-origin" id="meta_referrer" />
+    <meta
+      name="description"
+      content="Need great WiFi, big tables, charging outlets, and lots of light?
+      You got it! Discover cafes near you that tick all your
+      work-from-home boxes – and check out which spots
+      your friends like to work from."
+    />
+    <script src=
+    "https://smtpjs.com/v3/smtp.js">
+  </script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/favicons.ico" />
+    <link href="https://api.mapbox.com/mapbox-gl-js/v1.0.0/mapbox-gl.css" rel="stylesheet">
+
+    <!-- Hotjar Tracking Code for https://www.syncremote.co -->
+    <script>
+      (function(h,o,t,j,a,r){
+        h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+        h._hjSettings={hjid:3548360,hjsv:6};
+        a=o.getElementsByTagName('head')[0];
+        r=o.createElement('script');r.async=1;
+        r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+        a.appendChild(r);
+      })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+    </script>
+    <!--
+      manifest.json provides metadata used when your web app is installed on a
+      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+    -->
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+
+		<link rel="stylesheet" href="%PUBLIC_URL%/animate/css/animate.css" />
+    <!--
+      Notice the use of %PUBLIC_URL% in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+    <title>Sync</title>
+    
+          
+    </script>
+  </head>
+  <body>
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PLR3SDRK"
+                    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+		<script src="%PUBLIC_URL%/animate/js/wow.js"></script>
+    <script
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyACOTvRgXOv5eWsgzVBWxrLrR4aOC0E_Po&libraries=places"></script>
+    <script>
+      let wow = new WOW(
+        {
+          animateClass: 'animated',
+          offset:       100,
+          callback:     function(box) {
+            console.log("WOW: animating <" + box.tagName.toLowerCase() + ">")
+          }
+        }
+      );
+      wow.init();
+    </script>
+    <script>
+      if ('serviceWorker' in navigator) {
+  navigator.serviceWorker.register('%PUBLIC_URL%/firebase-messaging-sw.js')
+    .then((registration) => {
+      console.log('Service Worker registered with scope:', registration.scope);
+    })
+    .catch((error) => {
+      console.error('Service Worker registration failed:', error);
+    });
+}
+    </script>
+      <!-- <script type="module" src="./firebase-messaging-sw.js"></script> -->
+  </body>
+</html>
