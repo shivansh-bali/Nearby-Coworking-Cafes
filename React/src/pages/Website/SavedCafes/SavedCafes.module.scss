@@ -1,0 +1,236 @@
+.featuredSection{
+    padding-bottom: 70px;
+
+    .savedCafe{
+        margin-bottom: 40px;
+
+        .backIcon{
+            margin-bottom: 46px;
+    
+            a{
+                font-weight: 600;
+                font-size: 14px;
+                line-height: 18px;
+                color: #393939;
+                display: flex;
+                align-items: center;
+    
+                svg{
+                    font-size: 18px;
+                    margin-top: 1px;
+                }
+            }
+        }
+
+        h5{
+            font-weight: 600;
+            font-size: 50px;
+            line-height: 54px;
+            color: #1C1C1C;
+            margin-bottom: 0px;
+            padding-bottom: 35px;
+            border-bottom: 1px solid #DEDEDE;
+        }
+    }
+    
+
+}
+
+
+
+.fixSpace {
+    padding-top: 120px;
+  }
+  
+
+.spaceBox {
+padding: 30px;
+}
+
+/*=======================================================
+//////////////RESPONSIVE MEDIA QUERY START///////////////
+=======================================================*/
+
+
+
+@media (max-width:991px) {
+    .spaceBox {
+       padding:15px;
+    }
+    .fixSpace {
+        padding-top: 85px;
+      }
+    .workSpaceSection {
+        margin-top: 30px;
+
+        .title2 {
+    
+            .moon {
+                right: 0px;
+            }
+            .star {
+                position: absolute;
+                left: 45px;
+                top: -25px;
+                pointer-events: none;
+                z-index: -1;
+                height: 80px;
+            }
+        }
+        .sliderRow {
+            margin: 0 0px;
+            
+            :global(.item) {
+                padding: 0px 10px;
+            }
+        }
+    
+    }
+    .bannerSection {
+        border-radius: 30px;
+        padding: 65px 0px 0px 0px;
+    
+        
+        .shapeTouch {
+            position: absolute;
+            left: 0;
+            top: 0px;    
+            width: 150px;
+        }
+
+        .imgBox {
+            display: none;
+        }
+        .contentBox {
+            padding: 40px 10px;
+    
+            .slTitle {
+                font-size: 34px;
+                font-weight: 600;
+                line-height: 40px;
+                margin-bottom: 20px;
+            }
+            p {
+                font-size: 16px;
+
+                br {
+                    display: none;
+                }
+            }
+    
+            .downloads {
+    
+                li {
+    
+                    a {
+    
+                        img {
+                            height: 40px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .featuredSection {
+
+        :global(.item) {
+            padding: 0px 10px;
+        }
+        
+        :global(.owl-carousel) {
+    
+            :global(.owl-nav) {
+                display: none;
+            }
+        }
+           
+    }
+    
+    .cardBox {
+        position: relative;
+        height: 280px;
+
+        h5 {
+            padding: 20px 20px;
+            font-size: 26px;
+        }
+        
+
+        &.cardBox2 {
+            margin-top: 20px;
+        }
+
+    }
+    
+}
+
+
+@media only screen and (min-width:768px) and (max-width:991px) {
+
+    .bannerSection {
+        border-radius: 30px;
+        padding: 65px 0px 0px 0px;
+    
+        
+
+        .imgBox {
+            display: block;
+
+            img {
+                width: 370px;
+            }
+        }
+    }
+}
+@media only screen and (min-width:992px) and (max-width:1199px){
+
+    .bannerSection {
+        
+        .imgBox {
+    
+            img {
+                width:530px;
+            }
+        }
+        .contentBox {
+            padding: 40px 20px;
+    
+            .slTitle {
+                font-size: 50px;
+                line-height:50px;
+            }
+        }
+    }
+    
+}
+
+
+@media only screen and (min-width:1200px) and (max-width:1490px){
+
+    .bannerSection {
+        
+    
+        .imgBox {
+
+    
+            img {
+                width: 670px;
+                position: absolute;
+                bottom: 0;
+                right: 0;
+            }
+        }
+        .contentBox {
+            padding: 40px 40px;
+    
+            .slTitle {
+                font-size: 60px;
+                line-height: 70px;
+            }
+            p {
+                font-size: 20px;
+            }
+        }
+    }
+}

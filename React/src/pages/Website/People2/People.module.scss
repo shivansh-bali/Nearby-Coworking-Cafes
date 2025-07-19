@@ -1,0 +1,464 @@
+.peopleSection {
+  padding: 30px 0px;
+  background: #FBFBFB;
+  border-top: 1px solid #E2E2E2;
+  margin-top: 85px;
+}
+.inviationsCard {
+  background-color: #fff;
+  border-radius: 10px;
+
+  .inviationsCardHead {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 20px;
+
+    h5 {
+      margin-bottom: 0px;
+      font-size: 18px;
+      font-weight: 600;
+    }
+    a {
+      font-size: 14px;
+      font-weight: 600;
+      text-decoration: underline;
+      color: #393939;
+      min-width: 70px;
+    text-align: right;
+    }
+  }
+  .filterOption {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 20px;
+
+    .filterOptionLeft {
+      width: 50%;
+      h5 {
+        margin-bottom: 2px;
+        font-size: 18px;
+        font-weight: 600;
+      }
+
+      .filterDropdown {
+        display: flex;
+
+        p {
+          margin: 0;
+          font-size: 14px;
+          color: #878787;
+        }
+        .selectForm {
+          border: none;
+          padding: 0px;
+          font-size: 14px;
+          font-weight: 600;
+          color: #878787;
+          padding-right: 20px;
+        }
+      }
+
+      .searchBox {
+        position: relative;
+        margin-top: 15px;
+
+        .icon {
+          font-size: 22px;
+          position: absolute;
+          left: 30px;
+          color: #BABABA;
+          top: 50%;
+          transform: translate(-50%, -50%);
+        }
+        .filterIcon {
+          position: absolute;
+          right: 15px;
+          color: #BABABA;
+          top: 50%;
+          transform: translate(-50%, -50%);
+        }
+        :global(.form-control) {
+          padding:18px 25px 18px 45px;
+          background: #FAFAFA;
+          border: none;
+          border-radius: 50px;
+          font-size: 14px;
+          font-weight: 600;
+
+          &:focus {
+            box-shadow: none;
+            outline: none;
+          }
+        }
+      }
+    }
+
+    .filterOptionRight {
+      width: 50%;
+      display: flex;
+      align-items: center;
+
+      .searchForm {
+        width: 100%;
+        color: #393939;
+        font-weight: 600;
+        font-size: 14px;
+        padding: 12px 15px;
+
+        &:focus {
+          box-shadow: none;
+          border: 1px solid var(--Main2);
+        }
+      }
+      .seeAll {
+        min-width: 60px;
+        text-align:right;
+        color: #222;
+      }
+    }
+  }
+  .inviationsCardBody {
+    border-top: 1px solid #DEDEDE;
+    padding: 10px 0px;
+
+    ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+
+      li {
+
+        &.inviationList {
+          display: flex;
+          padding: 15px 15px;
+
+          .inviationListLeft {
+            display: flex;
+            align-items: center;
+            width: 100%;
+            
+            .profileImg {
+              width: 35px;
+              height: 35px;
+              object-fit: cover;
+              border-radius: 50px;
+            }
+            h5 {
+              margin: 0px;
+              font-size: 18px;
+              font-weight: 600;
+              padding: 0px 10px;
+
+              p {
+                margin: 0;
+                display: inline-block;
+              }
+
+              span {
+                font-size: 14px;
+                color: #878787;
+              }
+            }
+          }
+          .inviationListRight {
+            display: flex;
+            justify-content: flex-end;
+
+            :global(.btn) {
+              background-color:transparent;
+              color: #BABABA;
+              font-size: 12px;
+              font-weight: 600;
+              border-radius: 50px;
+              padding: 0px 15px;
+              margin-left: 10px;
+              border: none;
+              min-width: 85px;
+              line-height: 35px;
+
+              &.ignoreBtn {
+                background: #F3F3F3;
+              }
+              &.acceptBtn {
+                background: #E0EBA5;
+                color: #738801;
+              }
+            }
+          }
+        }
+      }
+    }
+    .rowSpace {
+      margin: 0px;
+      padding: 0px 5px;
+    }
+    .notificationStart{
+      padding: 0px 30px;
+      background: #FFFFFF;
+      margin-bottom: 20px;
+
+      .notificationShow {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          padding: 25px 0px;
+
+          &.borderBottom {
+              border-bottom: 1px solid #DEDEDE;
+          }
+
+          .notificationName {
+              display: flex;
+
+              .textAlign{
+              }
+
+              img {
+                  width: 35px;
+                  height: 35px;
+                  border-radius: 50%;
+                  margin-right: 8px;
+              }
+
+              h4 {
+                  font-weight: 600;
+                  font-size: 18px;
+                  line-height: 22px;
+                  color: #393939;
+                  margin-bottom: 3px;
+              }
+
+              p {
+                  font-weight: 500;
+                  font-size: 14px;
+                  line-height: 22px;
+                  color: #878787;
+                  margin-bottom: 0px;
+              }
+              small {
+                  color: #878787;
+                  font-size: 10px;
+              }
+          }
+
+          .notificationButton{
+              display: flex;
+              gap: 5px;
+
+              button{
+                  padding: 0px 10px;
+                  min-width: 90px;
+                  height: 36px;
+                  line-height: initial;
+
+                  &.acceptBtn{
+                      color: #738801 !important;
+                      background: #E0EBA5 !important;
+                  }
+              }
+              .bulletBox {
+                  width: 12px;
+                  height: 12px;
+                  background: #738801;
+                  border-radius: 50px;
+              }
+          }
+      }   
+  }
+  }
+}
+
+/*=======================================================
+  //////////////RESPONSIVE MEDIA QUERY START///////////////
+  =======================================================*/
+
+@media (max-width: 991px) {
+  
+  .inviationsCard {
+  
+    .filterOption {
+      display: block;
+  
+      .filterOptionLeft {
+        width: 100%;
+        margin-bottom: 10px;
+      }
+  
+      .filterOptionRight {
+        width: 100%;
+  
+        .searchForm {
+          width: 100%;
+          color: #393939;
+          font-weight: 600;
+          font-size: 14px;
+          padding: 12px 15px;
+  
+          &:focus {
+            box-shadow: none;
+            border: 1px solid var(--Main2);
+          }
+        }
+      }
+    }
+    .inviationsCardBody {
+  
+      ul {
+  
+        li {
+  
+          &.inviationList {
+  
+            .inviationListLeft {
+              h5 {
+                font-size: 14px;
+
+              p {
+                overflow: hidden;
+                -o-text-overflow: ellipsis;
+                text-overflow: ellipsis;
+                display: -webkit-box;
+                -webkit-line-clamp: 1;
+                -webkit-box-orient: vertical;
+              }
+  
+                span {
+                  display: block;
+                  font-size: 12px;
+                  overflow: hidden;
+                  -o-text-overflow: ellipsis;
+                  text-overflow: ellipsis;
+                  display: -webkit-box;
+                  -webkit-line-clamp: 1;
+                  -webkit-box-orient: vertical;
+                  margin-bottom: 0;
+
+                  b {
+                    display: none;
+                  }
+                }
+              }
+            }
+            .inviationListRight {
+  
+              :global(.btn) {
+                font-size: 10px;
+                padding: 0px 10px;
+                margin-left: 5px;
+                min-width: 70px;
+                line-height: 30px;
+                height: 30px;
+              }
+            }
+          }
+        }
+      }
+      .rowSpace {
+        padding-bottom: 10px;
+        overflow: hidden;
+        overflow-x: scroll;
+        white-space: nowrap;
+        // flex-wrap: inherit;
+
+        :global(.col-md-4) {
+          width: 85%;
+        }
+      }
+      
+    .notificationStart{
+      padding: 0px 30px;
+      background: #FFFFFF;
+      margin-bottom: 20px;
+
+      .notificationShow {
+          display: block;
+        
+          padding: 25px 0px;
+
+          &.borderBottom {
+              border-bottom: 1px solid #DEDEDE;
+          }
+
+          .notificationName {
+              display: flex;
+
+              .textAlign{
+              }
+
+              img {
+                  width: 35px;
+                  height: 35px;
+                  border-radius: 50%;
+                  margin-right: 8px;
+              }
+
+              h4 {
+                  font-weight: 600;
+                  font-size: 18px;
+                  line-height: 22px;
+                  color: #393939;
+                  margin-bottom: 3px;
+              }
+
+              p {
+                  font-weight: 500;
+                  font-size: 14px;
+                  line-height: 22px;
+                  color: #878787;
+                  margin-bottom: 0px;
+              }
+              small {
+                  color: #878787;
+                  font-size: 10px;
+              }
+          }
+
+          .notificationButton{
+              display: flex;
+              gap: 5px;
+              margin-top: 15px;
+              padding-left: 40px;
+
+              button{
+                  padding: 0px 10px;
+                  min-width: 90px;
+                  height: 36px;
+                  line-height: initial;
+
+                  &.acceptBtn{
+                      color: #738801 !important;
+                      background: #E0EBA5 !important;
+                  }
+              }
+              .bulletBox {
+                  width: 12px;
+                  height: 12px;
+                  background: #738801;
+                  border-radius: 50px;
+              }
+          }
+      }   
+  }
+    }
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+
+  .inviationsCard {
+  
+    .inviationsCardBody {
+  
+      .rowSpace {
+
+        :global(.col-md-4) {
+          width: 50%;
+        }
+      }
+    }
+  }
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+}

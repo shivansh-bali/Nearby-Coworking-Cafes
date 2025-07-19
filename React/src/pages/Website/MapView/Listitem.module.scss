@@ -1,0 +1,371 @@
+.cardListItem {
+  width: 100%;
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 15px 15px;
+  display: flex;
+  margin-bottom: 15px;
+  align-items: center;
+
+  .listImage {
+    position: relative;
+    margin-right: 10px;
+    display: flex;
+
+    .imgBox {
+      width: 125px;
+      height: 120px;
+      object-fit: cover;
+      border-radius: 8px 0px 8px 8px;
+    }
+
+    .overlay {
+      position: absolute;
+      right: -1px;
+      height: 55px;
+      top: -1px;
+      z-index: 1;
+
+      .shape {
+        height: 100%;
+
+        path {
+          fill: #fff;
+        }
+      }
+
+      .viewBtn {
+        width: 41px;
+        height: 41px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 8px;
+        position: absolute;
+        top: 0;
+        right: 0;
+        background: #f8f8f8;
+
+        &.active {
+          background: #fff0c6;
+        }
+
+        &.saved {
+          background: #ffb2b2;
+
+          img {
+            height: 22px;
+          }
+        }
+
+        img {
+          height: 23px;
+        }
+      }
+    }
+
+    .playIcon {
+      position: absolute;
+      left: 10px;
+      bottom: 10px;
+
+      img {
+        width: 20px;
+      }
+    }
+  }
+
+  .itemDetails {
+    width: 100%;
+
+    div {
+      display: flex;
+      justify-content: space-between;
+
+      .rating {
+        color: #878787;
+        bottom: 10px;
+
+        svg {
+          color: #738801;
+          margin-right: 3px;
+        }
+      }
+
+      p {
+        margin-bottom: 0;
+        color: #878787;
+        font-weight: 500;
+        font-size: 14px;
+
+        .reviewCount {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+}
+
+.itemDetailsTitle {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+
+  a {
+    color: #393939;
+  }
+
+  h3 {
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 20px;
+    color: #393939;
+    margin-top: 5px;
+
+    a {
+      color: #393939 !important;
+      font-size: 20px !important;
+      text-decoration: none !important;
+    }
+  }
+
+  span {
+    font-weight: 500;
+    font-size: 14px;
+    color: #878787;
+    display: flex;
+
+    a {
+      text-decoration: none !important;
+    }
+
+    li {
+      list-style: none;
+      background-size: 1px;
+      margin-left: 5px;
+      display: flex;
+      align-items: center;
+      display: none;
+
+      &::before {
+        content: "•";
+        font-size: 6pt;
+        margin-right: 5px;
+      }
+
+      &:nth-child(2) {
+        span {
+          color: #45d6ad;
+        }
+      }
+    }
+  }
+}
+
+.profileIcons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+
+  ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    margin-left: 8px;
+    align-items: center;
+
+    li {
+      img {
+        width: 25px;
+        height: 25px;
+        border-radius: 50%;
+        border: 1.5px solid white;
+        margin-left: -8px;
+        cursor: pointer;
+      }
+
+      span {
+        margin-left: -8px;
+        background: #fff0c6;
+        border-radius: 50%;
+        border: 1.5px solid #fff0c6;
+        width: 25px;
+        height: 25px;
+        font-size: 10px;
+        font-weight: 600;
+        color: #ffba00;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+      }
+    }
+  }
+
+  button {
+    font-weight: 600;
+    border: none;
+    font-size: 10px;
+    text-decoration-line: underline;
+    color: #878787;
+    background-color: transparent;
+  }
+}
+
+:global(.mapboxgl-marker) {
+  svg {
+    display: none;
+  }
+}
+
+.coffeShop {
+  padding: 2px;
+  width: 30px;
+  height: 30px;
+  background: #fff;
+  border-radius: 50%;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+
+  a {
+    color: var(--Color);
+  }
+
+  .coffeShopImg {
+    position: relative;
+
+    .image {
+      width: 45px;
+      height: 45px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+
+    .viewBtn {
+      position: absolute;
+      top: -4px;
+      right: -4px;
+      width: 15px;
+      height: 15px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 8px;
+
+      background: #f8f8f8;
+
+      &.active {
+        background: #fff0c6;
+      }
+
+      &.saved {
+        background: #ffb2b2;
+
+        img {
+          height: 22px;
+        }
+      }
+
+      img {
+        height: 10px;
+      }
+    }
+
+    // .overlay {
+    //   // position: absolute;
+    //   // top: -4px;
+    //   // right: -4px;
+    //   // width: 20px;
+    //   // height: 20px;
+    //   // border-radius: 50%;
+
+    //   // .shapeBg {
+    //   //   width: 18px;
+    //   //   height: 18px;
+    //   //   border-radius: 50%;
+    //   // }
+
+    //   .viewBtn {
+    //     width: 15px;
+    //     height: 15px;
+    //     display: flex;
+    //     align-items: center;
+    //     justify-content: center;
+    //     border-radius: 8px;
+    //     position: absolute;
+    //     top: 8px;
+    //     right: 9px;
+    //     background: #f8f8f8;
+
+    //     &.active {
+    //       background: #fff0c6;
+    //     }
+
+    //     &.saved {
+    //       background: #ffb2b2;
+
+    //       img {
+    //         height: 22px;
+    //       }
+    //     }
+
+    //     img {
+    //       height: 10px;
+    //     }
+    //   }
+    // }
+  }
+}
+
+.listContainer {
+  position: absolute;
+  z-index: 999;
+  bottom: 0;
+  right: 20px;
+  width: 550px;
+  transform: translate(-0%, -0%);
+  ;
+
+}
+
+
+/*=======================================================
+//////////////RESPONSIVE MEDIA QUERY START///////////////
+=======================================================*/
+
+@media (max-width: 991px) {
+
+
+  .listContainer {
+    position: absolute;
+    z-index: 999;
+    bottom: 30px;
+    right: 5px;
+    width: 100%;
+    transform: translate(0%, -50%);
+    padding: 0px 15px;
+
+  }
+
+
+  .cardListItem {
+    margin: 0px 5px;
+
+    .listImage {
+      .imgBox {
+        width: 100px;
+        height: 100px;
+      }
+    }
+  }
+
+  .itemDetailsTitle {
+    h3 {
+      font-size: 16px;
+    }
+
+    span {
+      font-size: 10px;
+    }
+  }
+}

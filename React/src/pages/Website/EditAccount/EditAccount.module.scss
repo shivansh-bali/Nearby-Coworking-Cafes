@@ -1,0 +1,346 @@
+.EditAccountSection {
+    padding-top: 130px;
+
+    .backIcon{
+        margin-bottom: 46px;
+
+        a{
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 18px;
+            color: #393939;
+            display: flex;
+            align-items: center;
+
+            svg{
+                font-size: 18px;
+                margin-top: 1px;
+            }
+        }
+    }
+
+    .EditAccountBox {
+        background: #FFFFFF;
+        border-radius: 0px 0px 10px 10px;
+
+        .EditAccountHeading {
+            padding: 30px 30px;
+            border-bottom: 1px solid #DEDEDE;
+
+            h5 {
+                font-weight: 600;
+                font-size: 18px;
+                line-height: 22px;
+                margin-bottom: 0px;
+            }
+        }
+
+        .EditAccountTable{
+            padding: 30px;
+
+            .formBox{
+
+                .emailFiled{
+                    display: flex;
+                    align-items: center;
+
+                    .emailRadio{
+                        width: 95%;
+                        margin-right: 16px;
+                    }
+                }
+                .primaryEmail{
+                    margin-bottom: 32px;
+
+                    .deleteBtn {
+                        background: #e75b5b;
+                        border: 1px solid #e75b5b;
+                        text-decoration: none;
+                        color: #fff;
+                        padding: 8px 15px;
+                        margin-left: 15px;
+                    }
+
+                    p{
+                        font-weight: 500;
+                        font-size: 12px;
+                        margin-left: 20px;
+                        line-height: 14px;
+                        margin-bottom: 17px;
+                    }
+
+                    button{
+                        background: #F1F1F1;
+                        border-radius: 4px;
+                        font-weight: 500;
+                        font-size: 14px;
+                        padding: 11px 14px;
+                        border: none;
+                        color: #BFBFBF;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+
+                        svg{
+                            font-size: 20px;
+                            margin-right: 6px;
+                        }
+                    }
+                }
+
+                :global(.form-label){
+                    position: absolute;
+                    left: 17px;
+                    top: -11px;
+                    background-color: #fff;
+                    padding: 4px;
+                    transform: translate(0%, 0%);
+                    font-weight: 500;
+                    font-size: 12px;
+                    line-height: 14px;
+                    color: #393939;
+                    z-index: 1;
+                }
+                :global(.form-control){
+                    height: 65px;
+                    background: #FFFFFF;
+                    border: 1px solid #DEDEDE;
+                    border-radius: 10px;
+                    color: #1C1C1C;
+                    padding: 20px;
+                    font-weight: 500;
+    
+                    &:focus {
+                        box-shadow: none;
+                        border: 1px solid var(--Color2);
+                    }
+                }
+                :global(.form-select){
+                    height: 65px;
+                    background-color: #FFFFFF;
+                    border: 1px solid #DEDEDE;
+                    border-radius: 10px;
+                    color: #1C1C1C;
+                    padding: 20px;
+                    font-weight: 500;
+    
+                    &:focus {
+                        box-shadow: none;
+                        border: 1px solid var(--Color2);
+                    }
+                }
+
+                .primaryEmail{
+
+                    a{
+                        font-weight: 600;
+                        font-size: 14px;
+                        line-height: 18px;
+                        color: #1C1C1C;
+                    }
+                    .resetPasswordBtn {
+                        background: #F3F3F3;
+                        color: #BABABA;
+                        border-radius: 50px;
+                        padding:8px 20px;
+                    }
+                }
+            }
+
+            .locationSettings{
+
+                h5{
+                    font-weight: 600;
+                    font-size: 18px;
+                    line-height: 22px;
+                    color: #1C1C1C;
+                }
+                p{
+                    font-weight: 500;
+                    font-size: 14px;
+                    line-height: 18px;
+                    color: #1C1C1C;
+                    margin-bottom: 15px;
+
+                    span{
+                        color: #45D6AD;
+                        cursor: pointer;
+                    }
+                }
+
+                .locationText{
+                    margin-top: 20px;
+
+                    ul{
+                        list-style: none;
+                        background: #F1F1F1;
+                        border-radius: 4px;
+                        padding: 3px;
+                        margin-bottom: 0px;
+                        max-width: 140px;
+                        display: flex;
+                        align-items: center;
+                        height: 46px;
+
+                        li{
+                            
+                            a{
+                                font-weight: 600;
+                                font-size: 14px;
+                                line-height: 18px;
+                                color: #BABABA;
+                                padding: 10px 20px;
+                                gap: 10px;
+                                border-radius: 4px;
+
+                                &.active{
+                                    background: #738801;
+                                    border-radius: 4px;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .facebookIcon{
+                    display: flex;
+                    align-items: center;
+                    margin-top: 18px;
+                    margin-bottom: 15px;
+
+                    img{
+                        width: 34px;
+                        height: 34px;
+                        margin-right: 10px;
+                    }
+                    h6{
+                        margin-bottom: 0px;
+                        font-weight: 500;
+                        font-size: 14px;
+                        line-height: 18px;
+                    }
+                }
+
+                .disConnect{
+                    a{
+                        font-weight: 600;
+                        font-size: 14px;
+                        line-height: 18px;
+                        text-decoration-line: underline;
+                        color: #1C1C1C;
+                    }
+                }
+
+                .checkBoxSection{
+                    margin-top: 10px;
+
+                    .checkBox{
+                        margin-top: 15px;
+
+                        p{
+                            margin-bottom: 0px;
+                            font-weight: 500;
+                            font-size: 14px;
+                            line-height: 18px;
+                            color: #1C1C1C;
+                        }
+                    }
+                }
+            }
+
+            .btnSubmit{
+                margin-top: 30px;
+                text-align: right;
+            }
+        }
+        
+    }
+}
+
+.numberForm {
+
+    :global(.react-tel-input) {
+
+        :global(.form-control) {
+          width: 100%;
+          height: auto;
+          padding-left: 70px !important;
+      
+          &:focus {
+            border: 1px solid #ccc !important;
+          }
+        }
+        :global(.flag-dropdown) {
+            background: #fff;
+            border-radius: 10px 0 0 10px;
+      
+          :global(.selected-flag) {
+            width: 60px;
+            padding-left: 12px;
+            border-radius: 10px 0 0 10px;
+            background: #fff;
+          }
+        }
+      }
+}
+
+.saveBtn {
+    background: #F3F3F3 !important;
+    color: #BABABA!important;
+    border-radius: 50px;
+    padding:8px 20px;
+    font-weight: 600;
+}
+.privacyBox {
+
+    p {
+        font-weight: 500;
+        margin-bottom: 15px;
+    }
+    h6 {
+        font-size: 18px;
+        font-weight: 500;
+    }
+
+    ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        margin-bottom: 30px;
+
+        li {
+           line-height: 30px;
+
+            label {
+                font-weight: 500;
+            }
+        }
+    }
+}
+
+
+
+/*=======================================================
+//////////////RESPONSIVE MEDIA QUERY START///////////////
+=======================================================*/
+
+@media (max-width:767px) {
+
+    .EditAccountSection {
+        padding-top: 90px;
+    }
+
+    .primaryEmail{
+        margin-bottom: 32px;
+
+        .deleteBtn {
+            padding: 8px 10px!important;
+            margin-left: 8px !important;
+            border: none !important;
+        }
+        .resetPasswordBtn {
+            padding: 8px 13px!important;
+        }
+    }
+
+}

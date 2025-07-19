@@ -1,0 +1,60 @@
+.peopleSection {
+  padding-top: 100px;
+
+}
+
+/*=======================================================
+  //////////////RESPONSIVE MEDIA QUERY START///////////////
+  =======================================================*/
+
+@media (max-width: 991px) {
+  .bannerSection {
+    
+    .contentBox_head {
+    
+      h5 {
+        
+        font-size: 14px !important;
+      
+      }
+      a {
+       
+        font-size: 14px;
+      
+      }
+    }
+    .invitation_list {
+      display: block !important;
+
+      .replyMessages {
+        display: block !important;
+        text-align: center !important;
+        margin-top: 24px;
+        margin-bottom: 10px;
+
+        img {
+          width: 44px !important;
+          height: 44px !important;
+          border-radius: 50%;
+        }
+
+        h5 {
+          font-size: 18px !important;
+          margin-top: 8px !important;
+        }
+        p {
+          margin-bottom: 0px;
+          font-weight: 500;
+          font-size: 12px;
+          line-height: 14px;
+          color: #878787;
+        }
+      }
+
+      .revieBtn {
+        text-align: center !important;
+        margin-bottom: 15px !important;
+      }
+    }
+  }
+}

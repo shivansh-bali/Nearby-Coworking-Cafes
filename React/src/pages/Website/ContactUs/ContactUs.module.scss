@@ -1,0 +1,136 @@
+.bannerSection {
+    position: relative;
+    margin-top: 80px;
+
+    img{
+        width: 100%;
+        border-radius: 10px;
+    }
+
+    .contentBox {
+        top: 50%;
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+        .contentHeading {
+
+            h1 {
+                color: #1C1C1C;
+                font-weight: 600;
+                font-size: 50px;
+                line-height: 54px;
+                text-align: center;
+            }
+        }
+    }
+
+}
+
+.contactForm{
+    padding: 60px 0px;
+
+    .contactMessage{
+        margin-bottom: 22px;
+        padding-right: 100px;
+
+        h3{
+            font-weight: 600;
+            font-size: 30px;
+            line-height: 34px;
+            color: #1C1C1C;
+        }
+        p{
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 30px;
+            color: #1C1C1C;
+            margin-top: 35px;
+        }
+    }
+
+    .formContact{
+        p{
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 18px;
+            color: #878787;
+            letter-spacing: -0.04em;
+        }
+
+        .formBox{
+
+            :global(.form-label){
+                position: absolute;
+                left: 17px;
+                top: -11px;
+                background-color: #fff;
+                padding: 4px;
+                transform: translate(0%, 0%);
+                font-weight: 500;
+                font-size: 12px;
+                line-height: 14px;
+                color: #393939;
+            }
+            textarea {
+
+                &:global(.form-control){ 
+                    height: auto;
+                }
+            }
+            :global(.form-control){
+                height: 65px;
+                background: #FFFFFF;
+                border: 1px solid #DEDEDE;
+                border-radius: 10px;
+                color: #1C1C1C;
+                padding: 20px;
+                font-size: 14px;
+                font-weight: 500;
+
+                &:focus {
+                    box-shadow: none;
+                    border: 1px solid var(--Color2);
+                }
+            }
+
+            textarea{
+                height: 125px;
+                width: 100%;
+                background: #FFFFFF;
+                border: 1px solid #DEDEDE;
+                border-radius: 10px;
+                color: #DEDEDE;
+                padding: 20px;
+            }
+
+            .btnSubmit{
+
+                :global(.btn){
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
+.spaceBox{
+    padding: 30px;
+}
+
+/*=======================================================
+//////////////RESPONSIVE MEDIA QUERY START///////////////
+=======================================================*/
+
+@media (max-width:991px) {
+    .spaceBox{
+        display: none;
+    }
+    .contactForm{
+        padding: 90px 0px;
+
+        .contactMessage{
+            padding-right:15px;
+        }
+    }    
+}
