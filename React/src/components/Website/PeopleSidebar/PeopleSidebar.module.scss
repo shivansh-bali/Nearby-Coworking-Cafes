@@ -1,0 +1,79 @@
+.people_sidbar {
+
+  .sidbar_Menu {
+    background-color: #fff;
+    border-radius: 10px;
+    position: relative;
+
+    h5 {
+      font-weight: 600;
+      font-size: 18px;
+      line-height: 22px;
+      color: #393939;
+      border-bottom: 1px solid #DEDEDE;
+      margin-bottom: 0px;
+      padding: 15px 20px;
+    }
+
+    ul {
+      margin: 0;
+      list-style: none;
+      padding: 10px 20px;
+
+      li {
+        position: relative;
+
+        a {
+          display: flex;
+          align-items: center;
+          width: 100%;
+          color: #393939;
+          font-weight: 600;
+          padding: 7px 0px;
+
+          span {
+            width: 25px;
+            text-align: center;
+            margin-right: 4px;
+          }
+        }
+        .countUser {
+          position: absolute;
+          right: 0;
+          top: 50%;
+          display: inline-block;
+          width: auto;
+          transform: translate(0, -50%);
+        }
+
+      }
+    }
+  }
+  .addCard {
+    background-color: #fff;
+    padding:15px 15px;
+    border-radius: 8px;
+    width: 100%;
+
+    .addImg {
+      width: 100%;
+    }
+  }
+}
+/*=======================================================
+    //////////////RESPONSIVE MEDIA QUERY START///////////////
+    =======================================================*/
+
+@media (max-width: 991px) {
+
+  .people_sidbar {
+    margin-bottom: 20px;
+
+    .addCard {
+      display: none;
+    }
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+}

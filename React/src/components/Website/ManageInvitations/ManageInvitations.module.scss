@@ -1,0 +1,254 @@
+.peopleSection {
+  padding: 30px 0px;
+  background: #FBFBFB;
+  border-top: 1px solid #E2E2E2;
+  margin-top: 85px;
+}
+.inviationsCard {
+  background-color: #fff;
+  border-radius: 10px;
+
+  .inviationsCardHead {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 20px;
+
+    h5 {
+      margin-bottom: 0px;
+      font-size: 18px;
+      font-weight: 600;
+    }
+    a {
+      font-size: 14px;
+      font-weight: 600;
+      text-decoration: underline;
+      color: #393939;
+    }
+  }
+  .inviationsCardBody {
+    border-top: 1px solid #DEDEDE;
+    padding: 10px 0px;
+
+    .noDatafound {
+      text-align: center;
+      padding: 20px 40px;
+
+      img {
+        height: 300px;
+        margin-bottom: 20px;
+      }
+      h5 {
+        font-size: 18px;
+        font-weight: 600;
+        margin-bottom: 0px;
+      }
+      
+    }
+
+    ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+
+      li {
+
+        &.inviationList {
+          display: flex;
+          padding: 15px 15px;
+
+          .inviationListLeft {
+            display: flex;
+            align-items: center;
+            width: 100%;
+            
+            .profileImg {
+              width: 35px;
+              height: 35px;
+              object-fit: cover;
+              border-radius: 50px;
+            }
+            h5 {
+              margin: 0px;
+              font-size: 18px;
+              font-weight: 600;
+              padding: 0px 10px;
+
+              p {
+                margin: 0;
+                display: inline-block;
+              }
+              span {
+                font-size: 14px;
+                color: #878787;
+              }
+            }
+          }
+          .inviationListRight {
+            display: flex;
+            justify-content: flex-end;
+
+            :global(.btn) {
+              background-color:transparent;
+              color: #BABABA;
+              font-size: 12px;
+              font-weight: 600;
+              border-radius: 50px;
+              padding: 0px 15px;
+              margin-left: 10px;
+              border: none;
+              min-width: 125px;
+              line-height: 35px;
+
+              &.ignoreBtn {
+                background: #F3F3F3;
+              }
+              &.acceptBtn {
+                background: #E0EBA5;
+                color: #738801;
+              }
+            }
+          }
+        }
+      }
+    }
+    .rowSpace {
+      margin: 0px;
+      padding: 0px 5px;
+    }
+  }
+
+  :global(.nav) {
+    padding: 0px 20px;
+
+    :global(.nav-item) {
+
+      :global(.nav-link) {
+        background-color: transparent;
+        color: #393939;
+        font-weight: 600;
+        font-size: 14px;
+        border: none;
+        border-bottom: 2px solid transparent;
+        border-radius: 0px;
+        padding: 10px 0px;
+        margin-right: 20px;
+
+        &:global(.active) {
+          border-bottom: 2px solid #1C1C1C;
+        }
+      }
+    }
+  }
+}
+
+/*=======================================================
+  //////////////RESPONSIVE MEDIA QUERY START///////////////
+  =======================================================*/
+
+@media (max-width: 991px) {
+  .inviationsCard {
+  
+    .filterOption {
+      display: block;
+  
+      .filterOptionLeft {
+        width: 100%;
+        margin-bottom: 10px;
+      }
+  
+      .filterOptionRight {
+        width: 100%;
+  
+        .searchForm {
+          width: 100%;
+          color: #393939;
+          font-weight: 600;
+          font-size: 14px;
+          padding: 12px 15px;
+  
+          &:focus {
+            box-shadow: none;
+            border: 1px solid var(--Main2);
+          }
+        }
+      }
+    }
+    .inviationsCardBody {
+      
+      .noDatafound {
+
+        img {
+          height: auto;
+          width: 100%;
+        }
+        
+      }
+
+      ul {
+  
+        li {
+  
+          &.inviationList {
+  
+            .inviationListLeft {
+              h5 {
+                font-size: 14px;
+
+              p {
+                overflow: hidden;
+                -o-text-overflow: ellipsis;
+                text-overflow: ellipsis;
+                display: -webkit-box;
+                -webkit-line-clamp: 1;
+                -webkit-box-orient: vertical;
+              }
+  
+                span {
+                  display: block;
+                  font-size: 12px;
+                  overflow: hidden;
+                  -o-text-overflow: ellipsis;
+                  text-overflow: ellipsis;
+                  display: -webkit-box;
+                  -webkit-line-clamp: 1;
+                  -webkit-box-orient: vertical;
+                  margin-bottom: 0;
+
+                  b {
+                    display: none;
+                  }
+                }
+              }
+            }
+            .inviationListRight {
+  
+              :global(.btn) {
+                font-size: 10px;
+                padding: 0px 10px;
+                margin-left: 5px;
+                min-width: 70px;
+                line-height: 30px;
+                height: 30px;
+              }
+            }
+          }
+        }
+      }
+      .rowSpace {
+        padding-bottom: 10px;
+        overflow: hidden;
+        overflow-x: scroll;
+        white-space: nowrap;
+        flex-wrap: inherit;
+
+        :global(.col-md-4) {
+          width: 85%;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+}

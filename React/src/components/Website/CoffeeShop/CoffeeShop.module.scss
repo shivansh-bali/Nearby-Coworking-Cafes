@@ -1,0 +1,208 @@
+@import "../../../assets/stylesheet/variables.module.scss";
+@import "../../../assets/stylesheet/fonts.module.scss";
+
+.coffeShop {
+  padding: 10px 0px;
+
+  a {
+    color: var(--Color);
+  }
+
+  .coffeShopImg {
+    position: relative;
+
+    .image {
+      width: 100%;
+      border-radius: 10px;
+      object-fit: cover;
+      height: 200px;
+    }
+
+    .overlay {
+      position: absolute;
+      top: -1px;
+      right: -2px;
+      width: 85px;
+
+      .shapeBg {
+        width: 100%;
+        height: 100%;
+      }
+
+      .viewBtn {
+        width: 58px;
+        height: 58px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 8px;
+        position: absolute;
+        top: 0;
+        right: 0;
+        background: #f8f8f8;
+        z-index: 99;
+
+        &.active {
+          background-color: #e0eba5;
+        }
+
+        &.saved {
+          background: #ffb2b2;
+
+          img {
+            height: 22px;
+          }
+        }
+
+        img {
+          height: 30px;
+        }
+      }
+    }
+  }
+
+  .coffeShopBody {
+    position: relative;
+    margin-top: 12px;
+    text-align: left;
+
+    h3 {
+      font-size: 20px;
+      font-weight: 600;
+      margin-bottom: 5px;
+      padding-right: 100px;
+      overflow: hidden;
+      -o-text-overflow: ellipsis;
+      text-overflow: ellipsis;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      min-height: 50px;
+    }
+
+    p {
+      color: #878787;
+      padding-right: 0px;
+      font-size: 14px;
+
+      &.pText {
+        overflow: hidden;
+        -o-text-overflow: ellipsis;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        min-height: 43px;
+      }
+
+      .reviewCount {
+        position: absolute;
+        right: 0px;
+        bottom: -3px;
+      }
+    }
+
+    .rating {
+      display: flex;
+      align-items: center;
+      position: absolute;
+      right: 0;
+      top: 8px;
+      color: #878787;
+
+      svg {
+        color: #738801;
+        position: relative;
+        top: -2px;
+        margin-right: 3px;
+      }
+    }
+  }
+}
+
+/*=======================================================
+//////////////RESPONSIVE MEDIA QUERY START///////////////
+=======================================================*/
+
+@media (max-width: 991px) {
+  .coffeShop {
+    padding: 10px 0px;
+
+    .coffeShopImg {
+      .image {
+        height: 285px;
+      }
+    }
+
+    .coffeShopBody {
+
+      h3 {
+        -webkit-line-clamp: 2;
+        min-height: auto;
+      }
+
+      p {
+
+        &.pText {
+          -webkit-line-clamp: 2;
+          min-height: auto;
+        }
+      }
+    }
+
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .coffeShop {
+    padding: 10px 10px;
+
+    a {
+      color: var(--Color);
+    }
+
+    .coffeShopImg {
+      .image {
+        height: 150px;
+      }
+    }
+
+    .coffeShopBody {
+
+      p {
+        padding-right: 90px;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .coffeShop {
+    .coffeShopBody {
+      h3 {
+        font-size: 18px;
+        margin-bottom: 2px;
+      }
+
+      p {
+        font-size: 15px;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1300px) {
+  .coffeShop {
+    padding: 10px 0px;
+
+    a {
+      color: var(--Color);
+    }
+
+    .coffeShopImg {
+      .image {
+        height: 180px;
+      }
+    }
+  }
+}

@@ -1,0 +1,422 @@
+.fixSpace {
+  padding-top: 96px;
+}
+
+.searchSection {
+  border-top: 1px solid #e2e2e2;
+  background-color: #fff;
+  padding: 30px 0px 15px 0px;
+
+  .carouselVisibility {
+    padding: 0 80px;
+
+    .visibility {
+      border-right: 1px solid #eeeeee;
+      padding-right: 15px;
+
+      label {
+        color: #878787;
+        font-weight: 500;
+        font-size: 12px;
+      }
+
+      ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        width: max-content;
+
+        li {
+          button {
+            background: #f3f3f3;
+            color: #878787;
+            border: none;
+            border-radius: 5px;
+            font-size: 12px;
+            padding: 5px 15px;
+            display: block;
+            min-width: 60px;
+            margin-right: 5px;
+            margin-top: 3px;
+            font-weight: 600;
+            transition: 0.5s;
+
+            &:hover {
+              background: #e0eba5;
+              color: #738801;
+            }
+          }
+        }
+      }
+    }
+
+    .owlCtsCarsol {
+      width: 100%;
+      position: relative;
+      display: flex;
+      // gap: 12px;
+
+      h4 {
+        font-size: 18px;
+        font-weight: 600;
+        min-width: 100px;
+        margin-bottom: 0px !important;
+        display: flex;
+        align-items: center;
+
+      }
+
+      :global(.owl-stage) {
+        width: max-content !important;
+        margin: 0 auto;
+        justify-content: center;
+
+        :global(.owl-item) {
+          width: auto;
+
+          :global(.item) {
+            width: 100%;
+          }
+        }
+      }
+
+      .iconList {
+        font-weight: 600;
+        font-size: 10px;
+        line-height: 14px;
+        color: #878787;
+        margin: 0px 20px;
+        margin-bottom: 0px;
+        cursor: pointer;
+        background: transparent;
+        border: none;
+        text-align: center;
+        padding: 0px;
+        transition: 0.5s;
+
+        svg {
+          color: #878787;
+          fill: #878787;
+        }
+
+        img {
+          height: 22px;
+          margin: 0 auto;
+          width: auto;
+          // filter: invert(58%) sepia(5%) saturate(28%) hue-rotate(339deg)
+          //   brightness(92%) contrast(82%);
+          margin-bottom: 5px;
+        }
+
+        h6 {
+          margin: 0px;
+          font-size: 10px;
+        }
+
+        &.active {
+          color: #738801;
+
+          img {
+            filter: invert(40%) sepia(66%) saturate(984%) hue-rotate(37deg) brightness(98%) contrast(99%);
+          }
+        }
+      }
+
+      :global(.owl-carousel) {
+        :global(.owl-nav) {
+          display: flex;
+          margin: 0px;
+
+          button {
+            width: 30px;
+            height: 30px;
+            background: #fff !important;
+            border-radius: 50px !important;
+            font-size: 20px !important;
+            font-weight: bold !important;
+            display: flex !important;
+            justify-content: center;
+            color: #878787 !important;
+            position: absolute;
+            align-items: center;
+            box-shadow: 0 0 10px #c4c4c454;
+            transition: 0.5s;
+            transform: translate(-0%, -50%);
+            top: 50%;
+            margin: 0px;
+
+            &:global(.disabled) {
+              display: none !important;
+            }
+
+            &:hover {
+              background: #e0eba5 !important;
+              color: #738801 !important;
+            }
+
+            &:global(.owl-prev) {
+              left: -30px;
+            }
+
+            &:global(.owl-next) {
+              right: -30px;
+            }
+          }
+        }
+      }
+
+
+    }
+
+
+    .mobileFilter {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: none;
+      white-space: nowrap;
+      overflow: hidden;
+      overflow-x: scroll;
+
+      &::-webkit-scrollbar {
+        width: 5px;
+        height: 0px;
+        display: none;
+      }
+
+      &::-webkit-scrollbar-track {
+        background-color: transparent;
+      }
+
+      &::-webkit-scrollbar-thumb {
+        background-color: transparent;
+        width: 5px;
+      }
+
+      li {
+
+        .iconList {
+          font-weight: 600;
+          font-size: 10px;
+          line-height: 14px;
+          color: #878787;
+          margin: 0px 20px;
+          margin-bottom: 0px;
+          cursor: pointer;
+          background: transparent;
+          border: none;
+          text-align: center;
+          padding: 0px;
+          transition: 0.5s;
+
+          svg {
+            color: #878787;
+            fill: #878787;
+          }
+
+          img {
+            height: 22px;
+            margin: 0 auto;
+            width: auto;
+            // filter: invert(58%) sepia(5%) saturate(28%) hue-rotate(339deg)
+            //   brightness(92%) contrast(82%);
+            margin-bottom: 5px;
+          }
+
+          h6 {
+            margin: 0px;
+            font-size: 10px;
+          }
+
+          &.active {
+            color: #738801;
+
+            img {
+              filter: invert(40%) sepia(66%) saturate(984%) hue-rotate(37deg) brightness(98%) contrast(99%);
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .searchBar {
+    width: 750px;
+    margin: 0 auto;
+    background: #fafafa;
+    padding: 15px 15px;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+
+    .textField {
+      position: relative;
+      padding: 0px 20px;
+      width: 100%;
+
+      &.darkFont {
+        :global(.form-control) {
+          color: #1c1c1c;
+        }
+      }
+
+      &.distanceBox {
+        width: 50%;
+        border-left: 1px solid #eeeeee;
+        margin-left: 20px;
+      }
+
+      label {
+        display: block;
+        font-size: 10px;
+        font-weight: 500;
+        color: #878787;
+        margin-bottom: 2px;
+      }
+
+      :global(.form-control) {
+        border: none;
+        padding: 0px;
+        background: transparent;
+        font-weight: 600;
+        font-size: 14px;
+        letter-spacing: -0.4px;
+        border-radius: 0px;
+        padding-right: 20px;
+
+        &:focus {
+          box-shadow: none;
+        }
+      }
+
+      .arrowBtn {
+        border: none;
+        padding: 0;
+        position: absolute;
+        right: 0px;
+        top: 50%;
+        background: transparent;
+        transform: translate(-50%, -50%);
+
+        img {
+          height: 8px;
+        }
+      }
+    }
+
+    .submitBtn {
+      background: #e0eba5;
+      color: #738801;
+      display: flex;
+      align-items: center;
+      padding: 12px 15px;
+      border-radius: 50px;
+      min-width: 115px;
+      justify-content: center;
+      font-weight: 600;
+      font-size: 14px;
+
+      span {
+        margin-left: 5px;
+      }
+    }
+  }
+}
+
+/*=======================================================
+  //////////////RESPONSIVE MEDIA QUERY START///////////////
+  =======================================================*/
+
+@media (max-width: 991px) {
+  .fixSpace {
+    padding-top: 70px;
+  }
+
+  .searchSection {
+    border-top: 1px solid #e2e2e2;
+    padding: 15px 10px 5px 10px;
+    border-bottom: 1px solid #e2e2e2;
+    margin-top: 15px;
+
+    .carouselVisibility {
+      padding: 0px 0px;
+      display: block;
+
+      .visibility {
+        border-right: none;
+        padding-right: 0px;
+        display: none;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 10px;
+
+        label {
+          margin-right: 10px;
+        }
+      }
+
+      .owlCtsCarsol {
+        width: 100%;
+        position: relative;
+        padding-left: 0px;
+        display: none;
+
+        .iconList {
+          padding: 0px 0px 8px 0px;
+        }
+
+        :global(.owl-carousel) {
+          :global(.owl-nav) {
+            button {
+              transform: translate(-0%, -50%);
+              top: 40%;
+              margin: 0px;
+              display: none !important;
+            }
+          }
+        }
+      }
+
+
+      .mobileFilter {
+        display: flex;
+      }
+    }
+
+    .searchBar {
+      width: 100%;
+      padding: 8px;
+      margin-bottom: 15px;
+
+      .textField {
+        position: relative;
+        padding: 0px 12px;
+        width: 100%;
+
+        &.darkFont {
+          :global(.form-control) {
+            color: #1c1c1c;
+          }
+        }
+
+        &.distanceBox {
+          width: 80%;
+          margin-left: 10px;
+        }
+      }
+
+      .submitBtn {
+        min-width: 42px;
+        padding: 0px;
+        height: 42px;
+
+        span {
+          margin-left: 5px;
+          display: none;
+        }
+      }
+    }
+  }
+}
