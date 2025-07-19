@@ -1,0 +1,165 @@
+@import "../../../../assets/stylesheet/variables.module.scss";
+@import "../../../../assets/stylesheet/fonts.module.scss";
+
+.buttonsContainer {
+  margin-bottom: 10px;
+  color: gray;
+  button {
+    font-size: 16px;
+
+    color: inherit;
+    background-color: transparent;
+    border: none;
+    &:hover {
+      outline: none;
+      text-decoration: underline;
+    }
+    &.active {
+      outline: none;
+      text-decoration: underline;
+    }
+  }
+}
+.addBlogContainer {
+  background-color: #fff;
+  height: 100%;
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 0 1px 20px 0 rgba(69, 90, 100, 0.08);
+  > div {
+    font-family: "Plus Jakarta Sans", sans-serif !important;
+    padding: 10px;
+    border: 0.5px solid rgba(192, 191, 191, 0.373);
+    border-radius: 10px;
+    margin-top: 20px;
+    .userProfile {
+      cursor: pointer;
+      border-radius: 50%;
+      position: relative;
+      height: 80px;
+      width: 80px;
+      overflow: hidden;
+
+      img {
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        position: absolute;
+      }
+      .uploadBtnWrapper {
+        cursor: pointer;
+        height: 25px;
+        width: 80px;
+        margin-top: 5px;
+        position: relative;
+        overflow: hidden;
+        display: inline-block;
+        box-shadow: 0 1px 20px 0 rgba(69, 90, 100, 0.08);
+        top: 50px;
+
+        .btn {
+          width: 80px;
+          height: 100%;
+          border: none;
+          color: gray;
+          cursor: pointer;
+          background-color: rgba(0, 0, 0, 0.4);
+          font-size: 10px;
+        }
+        input[type="file"] {
+          height: 20px;
+          cursor: pointer;
+          font-size: 100px;
+          position: absolute;
+          left: 0;
+          top: 0;
+          opacity: 0;
+        }
+      }
+    }
+    .authorName {
+      margin: 10px 0 0 20px;
+      display: flex;
+
+      :global(.react-datepicker-wrapper) {
+        width: auto;
+      }
+    }
+  }
+  label {
+    width: 150px;
+    font-family: "Plus Jakarta Sans", sans-serif !important;
+    color: gray;
+    font-size: 14px;
+    font-weight: 600;
+  }
+  h6 {
+    font-family: "Plus Jakarta Sans", sans-serif !important;
+    color: gray;
+    font-size: 16px;
+    font-weight: 600;
+  }
+  textarea {
+    font-weight: 500;
+    font-family: "Plus Jakarta Sans", sans-serif !important;
+    width: 100%;
+    outline: none;
+    border: none;
+    font-size: 14px;
+    resize: none;
+    line-height: 14px;
+    padding: 0px;
+    overflow: hidden;
+  }
+  ::placeholder {
+    font-family: "Plus Jakarta Sans", sans-serif !important;
+    font-size: 14px;
+    font-weight: 500;
+    color: rgb(228, 225, 225);
+  }
+  input {
+    font-family: "Plus Jakarta Sans", sans-serif !important;
+    font-size: 14px;
+    font-weight: 500;
+    width: 250px;
+    border: none;
+    outline: none;
+    padding: 0 5px 5px;
+    margin-bottom: 10px;
+    border-bottom: 2px solid rgba(128, 128, 128, 0.092);
+    &:focus {
+      border-bottom: 2px solid var(--Main2);
+    }
+  }
+  :global(.rdw-editor-wrapper) {
+    box-shadow: 0 1px 10px 0 rgba(69, 90, 100, 0.08);
+    border-radius: 10px;
+    :global(.rdw-editor-main) {
+      height: 100%;
+      min-height: 200px;
+      padding: 0 10px;
+      font-size: 14px;
+      font-weight: 500;
+      font-family: "Plus Jakarta Sans", sans-serif !important;
+      &:global(.rdw-editor-toolbar) {
+        border-radius: 10px 10px 0 0;
+      }
+    }
+  }
+}
+@media (max-width: 767px) {
+  .addBlogContainer {
+    .userDetails {
+      flex-direction: column;
+      gap: 20px;
+    }
+    label {
+      width: 30vw;
+      max-width: 150px;
+    }
+    input {
+      width: 40vw;
+      max-width: 250px;
+    }
+  }
+}

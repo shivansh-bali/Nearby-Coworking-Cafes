@@ -1,0 +1,43 @@
+.couponTabs {
+
+
+  .themeBtn {
+    color: #333;
+    padding: 8px 25px;
+    margin-right: 10px;
+    text-align: center;
+    margin-bottom: 15px;
+    font-size: 14px;
+    border: 1px solid var(--Main);
+    background: var(--Main);
+    border-radius: 50px;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  :global(.nav) {
+    :global(.nav-item) {
+      :global(.nav-link) {
+        border: 1px solid #c1c1c1;
+        color: #222;
+        padding: 8px 20px;
+        border-radius: 7px;
+        margin-right: 10px;
+        min-width: 140px;
+        text-align: center;
+        margin-bottom: 15px;
+
+        &:global(.active) {
+          border: 1px solid var(--Main);
+          background: var(--Main);
+        }
+      }
+    }
+  }
+}
+
+/*=======================================================
+//////////////RESPONSIVE MEDIA QUERY START///////////////
+=======================================================*/
+@media (max-width: 767px) {
+}

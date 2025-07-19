@@ -1,0 +1,395 @@
+.buttonContainer {
+  position: sticky;
+  background: #fefcfc;
+  top: 0;
+  display: flex;
+  z-index: 1;
+  justify-content: flex-end;
+  padding: 20px 20px 0;
+  button {
+    border: none;
+    border-radius: 6px;
+    margin-left: 6px;
+    font-size: 14px;
+    padding: 10px 20px;
+    font-weight: 500;
+    &.primary {
+      background-color: #ffcbd0;
+      color: #e84e5d;
+    }
+    &.secondary {
+      background-color: #e6f1e3;
+      color: #709c64;
+    }
+  }
+}
+.container {
+  margin: 20px;
+  background: #fff;
+  padding: 20px;
+  border-radius: 20px;
+  font-family: Plus Jakarta Sans;
+  h6 {
+    margin: 0;
+    font-size: 10px;
+    color: #bababa;
+    font-weight: 600;
+  }
+  textarea {
+    background-color: #f3f3f3;
+    font-size: 14px;
+    border-radius: 5px;
+    width: 800px;
+    font-weight: 500;
+    max-width: 80vw;
+    height: unset;
+    resize: none;
+    padding: 10px;
+    border: none;
+    outline: none;
+    &:focus {
+      border: 1px solid var(--Main2) !important;
+      box-shadow: none;
+    }
+    &:disabled {
+      color: black;
+      padding: 0px;
+      background: transparent;
+    }
+  }
+  input,
+  select {
+    margin-top: 5px;
+    padding: 5px;
+    background: #f3f3f3;
+    border: none;
+    width: 250px;
+    font-size: 14px;
+    font-weight: 600;
+    border-radius: 5px;
+    outline: none;
+    &:focus {
+      border: 1px solid var(--Main2) !important;
+      box-shadow: none;
+    }
+
+    &:disabled {
+      color: black;
+      padding: 0px;
+      background: transparent;
+    }
+  }
+  p {
+    font-size: 14px;
+    font-weight: 600;
+  }
+  .header {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid var(--Main5);
+    h4 {
+      font-size: 14px;
+      font-weight: 600;
+    }
+    .navButtons {
+      button {
+        border: none;
+        background-color: transparent;
+        font-size: 12px;
+        font-weight: 500;
+        margin-left: 10px;
+        color: var(--Color5);
+        padding: 5px 0;
+        &.active {
+          color: black;
+          border-bottom: 2px solid black;
+        }
+      }
+    }
+    .editButton {
+      border: none;
+      font-size: 14px;
+      font-weight: 600;
+      position: absolute;
+      color: #bababa;
+      top: 0px;
+      right: -5px;
+      background: transparent;
+      &:hover {
+        color: var(--Color5);
+      }
+    }
+  }
+
+  .images {
+    display: flex;
+    flex-wrap: wrap;
+    .imageContainer {
+      position: relative;
+      img {
+        border-radius: 10px;
+        width: 200px;
+        height: 200px;
+        object-fit: cover;
+        margin: 10px;
+      }
+      .closeButton {
+        position: absolute;
+        border-radius: 50%;
+        padding: 5px;
+        right: -5px;
+        border: none;
+        background-color: white;
+        color: black;
+      }
+    }
+    .uploadButton {
+      margin: 10px;
+      border-radius: 10px;
+      width: 200px;
+      height: 200px;
+      border: 2px dashed #bababa;
+      label {
+        width: 200px;
+        height: 200px;
+        padding: 80px;
+        cursor: pointer;
+      }
+    }
+  }
+  .uploadDocuments {
+    position: relative;
+    height: 120px;
+    width: 120px;
+    border: 1px dashed black;
+    border-radius: 10px;
+    .uploadButton2 {
+      height: 120px;
+      width: 120px;
+    }
+    label {
+      width: 120px;
+      height: 120px;
+      padding: 45px;
+      cursor: pointer;
+    }
+    .closeButton {
+      position: absolute;
+      border-radius: 50%;
+      padding: 5px;
+      top: -15px;
+      right: -15px;
+      border: none;
+      background-color: white;
+      color: black;
+    }
+  }
+  .searchbar {
+    margin: 20px 0 80px;
+    background: var(--Main5);
+    padding: 15px;
+    border-radius: 100px;
+    position: relative;
+    input {
+      border: none;
+      outline: none;
+      background: transparent;
+      font-size: 14px;
+      padding: "0 10px";
+      width: 90%;
+      &:focus {
+        border: none !important;
+        box-shadow: none;
+      }
+    }
+    button {
+      background: var(--Main2);
+      position: absolute;
+      border: none;
+      border-radius: 50%;
+      height: 50px;
+      width: 50px;
+      right: 8px;
+      top: 8px;
+    }
+    .list {
+      list-style: none;
+      box-shadow: -1px 2px 6px 0px #cdcccc;
+      position: absolute;
+      max-height: 140px;
+      overflow: auto;
+      background: white;
+      width: 100%;
+      padding: 20px 0 10px 25px;
+      border-radius: 20px;
+      left: 0px;
+      top: 65px;
+      z-index: 2;
+      &::-webkit-scrollbar {
+        display: none;
+      }
+      li {
+        font-size: 14px;
+        font-weight: 600;
+        margin-bottom: 10px;
+        color: #bababa;
+        &:hover {
+          color: black;
+        }
+      }
+    }
+  }
+  .socialLinks {
+    list-style: none;
+    padding: 0;
+    li {
+      width: 350px;
+      padding: 14px 12px;
+      border-radius: 10px;
+      margin: 10px 0 0;
+      border: 1px solid #dedede;
+      span {
+        padding: 10px;
+        margin-right: 10px;
+        border-right: 1px solid #dedede;
+      }
+    }
+  }
+  .timeTable {
+    padding: 10px;
+    margin-top: 10px;
+    list-style: none;
+
+    padding: 0;
+    overflow: scroll;
+    &::-webkit-scrollbar {
+      display: none;
+    }
+    li {
+      padding: 10px;
+    }
+    .formBox {
+      position: relative;
+      margin-top: 10px;
+
+      :global(.form-label) {
+        position: absolute;
+        left: 7px;
+        top: -11px;
+        background-color: #fefcfc;
+        padding: 4px;
+        transform: translate(0%, 0%);
+        font-weight: 500;
+        font-size: 8px;
+        line-height: 14px;
+        color: #393939;
+        z-index: 1;
+      }
+
+      :global(.form-control),
+      :global(.form-select) {
+        height: 30px;
+        background-color: #f3f3f3;
+        border: 1px solid #dedede;
+        border-radius: 10px;
+        color: #1c1c1c;
+        padding: 5px;
+        font-size: 14px;
+        font-weight: 600;
+        width: 120px;
+        &:focus {
+          box-shadow: none;
+          border: 1px solid var(--Color2);
+        }
+      }
+    }
+  }
+
+  .infoitems {
+    width: 100%;
+
+    display: flex;
+    flex-wrap: wrap;
+    .item {
+      width: 300px;
+      padding: 10px;
+      :global(.react-tel-input) {
+        width: 250px;
+
+        :global(.flag-dropdown) {
+          padding: 0px;
+          background: transparent;
+          border: none;
+          border-right: 0px;
+          border-radius: 5px 0px 0px 5px !important;
+
+          :global(.selected-flag) {
+            padding: 0px 10px;
+            width: 50px;
+            border-radius: 10px 0px 0px 10px !important;
+            border: none !important;
+            border-right: 0px;
+
+            &::after {
+              content: "";
+              position: absolute;
+              right: 0;
+              top: 50%;
+              width: 0.5px;
+              height: 20px;
+              background: #fff;
+              transform: translate(-50%, -50%);
+            }
+          }
+        }
+        :global(.form-control) {
+          background-color: rgba(235, 235, 235, 0.178) !important;
+          border-radius: 10px !important;
+          padding: 7px 10px;
+          padding-left: 60px;
+          font-size: 14px;
+          font-family: Plus Jakarta Sans !important;
+          font-weight: 600 !important;
+          border: none;
+          width: 100%;
+          color: black !important;
+          &:disabled {
+            color: black !important;
+            background: transparent !important;
+          }
+          &:focus {
+            border: 1px solid var(--Main2) !important;
+            box-shadow: none;
+          }
+          &::placeholder {
+            color: black !important;
+          }
+        }
+      }
+    }
+  }
+  .selectedButton {
+    width: max-content;
+    line-height: 35px;
+    padding: 5px 10px;
+    vertical-align: middle;
+    font-size: "14px";
+    font-weight: 600;
+    font-size: 14px;
+    margin-right: 10px;
+    border-radius: 10px;
+    p {
+      margin: 0;
+    }
+    button {
+      height: 15px;
+      border: none;
+      padding: 0;
+      background: transparent;
+      margin: 0 0 0 10px;
+      color: inherit;
+    }
+  }
+}

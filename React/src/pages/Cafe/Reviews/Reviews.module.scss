@@ -1,0 +1,30 @@
+.reviewBox {
+  height: 75vh;
+  overflow: auto;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+  .review {
+    width: 100%;
+    margin-bottom: 20px;
+    input {
+      border: none;
+      outline: none;
+      width: 90%;
+      font-size: 14px;
+      font-weight: 600;
+      color: var(--Color5);
+    }
+  }
+  .radioButton {
+    background-color: var(--Main5);
+    &:checked {
+      background-color: var(--Color2);
+      border: var(--Color2);
+    }
+    &:focus {
+      box-shadow: 0 0 0 0.25rem var(--Main2);
+    }
+  }
+}

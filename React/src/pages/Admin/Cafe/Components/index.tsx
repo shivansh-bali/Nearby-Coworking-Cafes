@@ -1,0 +1,10 @@
+export { default as About } from "./About";
+export { default as BusinessAmenities } from "./Amenities";
+export { default as BusinessInformation } from "./BusinessInformation";
+export { default as Images } from "./Images";
+export { default as PersonalDetails } from "./PersonalDetails";
+export { default as Restrictions } from "./Restrictions";
+export { default as SocialLinks } from "./SocialLinks";
+export { default as TimeLimit } from "./TimeLimit";
+export { default as Timings } from "./Timings";
+export { default as UploadDocuments } from "./UploadDocuments";
