@@ -1,0 +1,41 @@
+.error {
+    font-size: 14px;
+    color: #cb0505 !important;
+    margin: 5px 0px 0px 0px;
+    font-weight: 500;
+
+    &.errorTime {
+        position: relative;
+        top: -18px;
+    }
+}
+.resendBox {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    margin-top: 10px;
+
+    .changeEmail {
+       font-size: 12px;
+       font-weight: 500;
+       margin-top: 30px;
+
+       a {
+            text-decoration: underline;
+            color:#1C1C1C;
+        }
+    }
+    .resendOtp {
+       font-size: 12px;
+       font-weight: 500;
+
+       p {
+        margin: 0px;
+
+        a {
+            text-decoration: underline;
+            color:#1C1C1C;
+        }
+       }
+    }
+}
